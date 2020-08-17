@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "author": "Gaurav Dwivedi",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "cookie-session": "^1.4.0",
     "express": "^4.17.1",
     "mongoose": "^5.10.0",
+    "nodemon": "^2.0.4",
     "passport": "^0.4.1",
     "passport-google-oauth2": "^0.2.0"
   }

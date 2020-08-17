@@ -1,11 +1,10 @@
 const express = require('express');
 const PORT = 8000;
-
 const app = express();
 const passport = require('passport');
 const cookieSession = require('cookie-session');
 
-
+const db = require('./config/mongoose');
 require('./config/passport-google-strategy');
 app.use(cookieSession({
     name: 'session',
