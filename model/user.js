@@ -18,7 +18,18 @@ const userSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
+    },
+
+    influencer: {
+        type: Boolean,
+        required: true,
+    },
+
+    sponser: {
+        type: Boolean,
+        required: true,
     }
+
 
 
 }, {
