@@ -4,7 +4,9 @@ const PORT = 8000;
 const app = express();
 const passport = require('passport');
 const cookieSession = require('cookie-session');
-require('./config/passport-setup');
+
+
+require('./config/passport-google-strategy');
 app.use(cookieSession({
     name: 'session',
     keys: ['key1', 'key2']
