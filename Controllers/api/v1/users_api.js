@@ -11,6 +11,12 @@ module.exports.createSession = async function (req, res) {
                 message: 'Invalid Username or Password'
             });
         }
+        return res.status(200).json({
+            message: 'Signin in successful',
+            data: {
+                token: jwt.sign(user.toJSON(), 'sponsertruck', { expiresIn: '10000' })
+            }
+        });
     } catch (err) {
         return res.status(500).json({
             message: 'Internal Server Error'
